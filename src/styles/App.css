@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+  }
+  
+  .chat-window {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .message-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin: 5px 0;
+  }
+  
+  .message.user {
+    text-align: right;
+    color: blue;
+  }
+  
+  .message.bot {
+    text-align: left;
+    color: green;
+  }
+  
+  .input-box {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .input-box input {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .input-box button {
+    padding: 10px;
+  }
+  
