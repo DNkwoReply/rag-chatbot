@@ -5,7 +5,7 @@ import MessageList from "./MessageList";
 import InputBox from "./InputBox";
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ messages, onSend }) => (
-    <div>
+    <div className="chat-window">
         <MessageList messages={messages} />
         <InputBox onSend={onSend} />
     </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ChatWindow from './components/ChatWindow';
 import { Message } from './types';
 import { sendMessage } from './services/api';
+import logo from './images/sprint_reply_uk_logo.jpg';
 
 
 
@@ -26,7 +27,12 @@ function App() {
 
   return (
     <div className="App">
+      <div className='header'>
+        <h1> Sprint Reply Bot </h1>
+        <img src={logo} className='logo' alt="sprint reply logo" />
+      </div>
       <ChatWindow messages={messages} onSend={handleSend} />
+      <div> Version 0.0.1 </div>
     </div>
   );
 }
